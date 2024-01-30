@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tag",
     "pluralName": "tags",
-    "displayName": "tag"
+    "displayName": "tag",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,9 @@
       "relation": "manyToMany",
       "target": "api::recipe.recipe",
       "inversedBy": "tags"
+    },
+    "color": {
+      "type": "string"
     }
   }
 }

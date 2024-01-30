@@ -813,6 +813,7 @@ export interface ApiTagTag extends Schema.CollectionType {
     singularName: 'tag';
     pluralName: 'tags';
     displayName: 'tag';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -825,6 +826,7 @@ export interface ApiTagTag extends Schema.CollectionType {
       'manyToMany',
       'api::recipe.recipe'
     >;
+    color: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
