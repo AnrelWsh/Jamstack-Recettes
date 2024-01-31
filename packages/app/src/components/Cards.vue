@@ -14,7 +14,8 @@
             <div class="flex flex-col">
               <h2>{{ recipe.title }}</h2>
               <div class="flex items-center gap-x-2">
-                <p v-for="tag in recipe.tags" :key="tag.id" class="py-1 px-2 bg-gray-200">
+                <p v-for="tag in recipe.tags" :key="tag.id" class="py-1 px-2"
+                :style="{ backgroundColor: tag.color }">
                   {{ tag.title }}
                 </p>
               </div>
