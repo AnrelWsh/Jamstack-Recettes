@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-  import Header from '../components/Header.vue';
   import Cards from '../components/Cards.vue';
   import type { ITag } from '~/models/search.model'
   const { find } = useStrapi4()
@@ -21,6 +20,7 @@
   <div class="container">
     <div v-if="!search.pending && search.sortedByTags" class="flex flex-col gap-y-4">
       <Header />
+      <h2 class="w-fit m-auto">Mama mia, régales-toi avec les migliori ritzete de la mama</h2>
   </div>
   </div>
 </template>
