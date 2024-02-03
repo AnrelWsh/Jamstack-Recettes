@@ -24,7 +24,7 @@
       <h1 class="absolute top-[40%] left-10">{{ recipe.data.title }}</h1>
     </div>
     
-    <NuxtLink :to="`/recettes`" class="no-underline text-blue hover:underline transition px-4">Retour aux recettes</NuxtLink>
+    <NuxtLink :to="`/recettes`"  :key="refreshKey"  class="no-underline text-blue hover:underline transition px-4">Retour aux recettes</NuxtLink>
     <div class="w-[100%] py-8">
       <h2 class="w-fit m-auto">Ritzeta :</h2>
       <div class="w-[80%] m-auto" v-html="renderMarkdown(recipe.data.description)"></div>

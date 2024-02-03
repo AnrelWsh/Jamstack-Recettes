@@ -17,11 +17,11 @@
 </script>
 
 <template>
+        <Header />
   <div class="container">
     <div v-if="!search.pending && search.sortedByTags" class="flex flex-col gap-y-4">
-      <Header />
-      <div class="flex flex-col lg:flex-col gap-4 ">
-        <div class="flex justify-around items-center gap-4">
+      <div class="flex flex-col gap-4 ">
+        <div class="flex flex-col lg:flex-row justify-around items-center gap-4 pt-4">
           <div class="form-group flex flex-col gap-2 w-[60%]" role="search">
             <label for="search">Chercher par recetta :</label>
             <input id="search" v-model="search.query" class="font-[Segoe Ui] px-4 py-2 rounded-1 outline-0 border-red" type="search" placeholder="Chercher une recette...">
